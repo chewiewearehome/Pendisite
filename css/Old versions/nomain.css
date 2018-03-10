@@ -1,0 +1,297 @@
+/*FONTS -------------------------------------------*/
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("../tmp/fonts/Proxima/Proxima Nova Reg.otf");
+}
+
+@font-face {
+    font-family: "Bebas";
+    src: url("../tmp/fonts/Bebas/BebasNeue Bold.otf");
+}
+
+
+
+/*MAIN ----------------------------------------------*/
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: "Proxima Nova";
+    margin: 0;
+    background-color: #F7F7F7;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none; /* Отменяем подчеркивание у ссылки */
+}
+
+h1 {
+    /* text-align: center; */
+    font-size: 4em;
+    font-weight: 700;
+    /* margin: 0; */
+    margin-bottom: .5rem;
+    color: #401935;
+}
+
+h2 {
+    /* text-align: center; */
+    font-size: 2.2em;
+    line-height: 2.2em;
+    font-weight: 600;
+    /* margin: 0; */
+    margin-bottom: .5rem;
+    color: #1A1A1A;
+}
+
+p {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    color: #2b2b2b;
+    margin-bottom: 0.5em;
+}
+
+
+/*HEADER -------------------------------------------*/
+
+.header_stuff {
+    width: 100%;
+    float: left;
+    position: fixed;
+    background-color: #1A1A1A;
+    z-index: 9999;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 2;
+}
+
+.main_logo { /*LOGO*/
+    font-family: "Bebas";
+    float: left;
+    width: auto;
+    font-size: 2.8em;
+    color: #fff;
+    margin: 20px 0 0 30px;
+    /* vertical-align: middle; */
+}
+
+header {
+    margin: 0 0 0 0;
+    width: 100%;
+    height: 60px;
+    padding: 0 0 0 0;
+    vertical-align: middle;
+}
+
+div.music-player {
+    width: 210px;
+    /* float: right; */
+    /* margin: 30px 30px 10px 0; */
+}
+
+div.music-player img {
+    float: right;
+    margin: 30px 30px 10px 0;
+}
+
+
+
+/*NAVIGATION --------------------------------------*/
+
+nav {
+    list-style: none;
+    text-align: center;
+    vertical-align: middle;
+}
+
+nav ul {
+    width: auto;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1em;
+}
+
+nav.header-nav ul {
+    padding: 15px 0 0 0;
+}
+
+nav ul li {
+    font-family: "Proxima Nova";
+    /* display: inline-block; */
+    margin: 13px 5% 0px 0px;
+    /* width: 75px; */
+}
+
+nav ul li a {
+    color: #5e5e5e;
+    transition: color 0.2s; /* vendorless fallback */
+    -o-transition: color 0.2s; /* opera */
+    -ms-transition: color 0.2s; /* IE 10 */
+    -moz-transition: color 0.2s; /* Firefox */
+    -webkit-transition: color 0.2s; /*safari and chrome */
+}
+
+nav ul li a:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+a.active {
+	color: #fff;
+}
+
+
+
+/*MAIN BODY -----------------------------------------*/
+
+.main_body {
+    max-width: 1280px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 80px auto;
+
+    background-color: transparent;
+    border-radius: 12px;
+    flex-grow: 1;
+    /* text-align: center; */
+}
+
+.main_body_content {
+    padding: 20px;
+}
+
+.main_body_content p {
+    text-align: justify;
+}
+
+
+
+/*FOOTER -----------------------------------------------*/
+
+footer {
+    width: 100%;
+	padding: 10px 0 10px 0;
+    background: #271021; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    width: 100%; /* Ширина слоя */
+}
+
+span.footer-content {
+    float: left;
+	margin-left: 20px;
+	/* vertical-align: middle; */
+}
+
+span.footer-nav-content {
+    width: 40%;
+	float: right;
+}
+
+nav.footer-nav {
+    text-align: right;
+    display: none;
+}
+
+nav.footer-nav ul li {
+    margin: 0 5% 0 0;
+}
+
+nav.footer-nav ul {
+    margin: 0;
+}
+
+
+
+
+/*FORMS-------------------------------------------------*/
+
+form.form-lab-1 {
+    max-width: 727px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+form.form-lab-1 input {
+    box-sizing: border-box; /*делаем border внутри padding'а*/
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    border: 2px solid #1A1A1A;
+    width: 100%;
+
+    font-size: 1em;
+    font-weight: bold;
+}
+
+form.form-lab-1 .not-submit-blocks {  /* Блоки ввода*/
+    width: 100%;
+    /* height: 100px; */
+}
+
+form.form-lab-1 .not-submit-blocks .not-submit {
+    line-height: 50px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+form.form-lab-1 .submit { /* Блок кнопки ввода*/
+    color: #fff;
+    background-color: #1A1A1A;
+    margin-left: 10px;
+    margin-bottom: 10px;
+
+    transition: background-color 0.2s; /* vendorless fallback */
+    -o-transition: background-color 0.2s; /* opera */
+    -ms-transition: background-color 0.2s; /* IE 10 */
+    -moz-transition: background-color 0.2s; /* Firefox */
+    -webkit-transition: background-color 0.2s; /*safari and chrome */
+}
+
+form.form-lab-1 .submit:hover { /* Блок кнопки ввода*/
+    color: #1A1A1A;
+    background-color: #fff;
+}
+
+
+/*MEDIA-------------------------------------------------*/
+
+@media screen and (max-width: 50em) {
+
+    /*Centering the logo and replacing nav elements to footer ----*/
+
+    .header_stuff {
+        display: flex;
+        justify-content: center;
+    }
+
+	span.main_logo {
+		margin-left: 0;
+		padding: 0;
+	}
+
+    nav.header-nav, div.music-player {
+        display: none;
+    }
+
+	nav.footer-nav {
+		display: block;
+	}
+
+    /*Reducing paddings of body -----------------------*/
+
+    .main_body {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
