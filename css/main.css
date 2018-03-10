@@ -501,6 +501,7 @@ ul.tracklist {
 }
 
 @media screen and (max-width: 560px) {
+    
     /* Changing general-info to response -----------------------*/
 
     div.general-info {
