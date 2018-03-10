@@ -307,7 +307,7 @@ h2.album-band {
     line-height: 1em;
 }
 
-img.album-cover {
+.album-cover {
     max-width: 300px;
     max-height: 300px;
 }
@@ -391,7 +391,7 @@ ul.tracklist {
     /*Main changes -------------------------------------------------------*/
 
     h1 {
-        font-size: 2.5em;
+        font-size: 2.7em;
         font-weight: 700;
         margin-bottom: .5rem;
         color: #401935;
@@ -435,7 +435,7 @@ ul.tracklist {
         order: 3;
         box-sizing: border-box;
         flex-basis: 100%;
-        border-top: 2px solid var(--gray);
+        border-top: 1px solid var(--gray);
     }
 
 	nav.footer-nav {
@@ -487,16 +487,26 @@ ul.tracklist {
 
     /* Changing albums covers to response -----------------------*/
 
-    img.album-cover {
+    .album-cover {
         max-width: 250px;
         max-height: 250px;
     }
-
 
     /* Changing general-info to response -----------------------*/
 
     div.general-info {
         margin: 42px;
+    }
+
+}
+
+@media screen and (max-width: 560px) {
+    /* Changing general-info to response -----------------------*/
+
+    div.general-info {
+        text-align: center;
+        margin: 0;
+        float: none;
     }
 
 }
