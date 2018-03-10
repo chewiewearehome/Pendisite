@@ -498,6 +498,27 @@ ul.tracklist {
         margin: 42px;
     }
 
+
+
+}
+
+@media screen and (max-width: 560px) {
+    /* Changing general-info to response -----------------------*/
+
+    div.general-info {
+        text-align: center;
+        margin: 0;
+        float: none;
+    }
+
+    /* Changing general-info to response -----------------------*/
+
+    div.general-info {
+        text-align: center;
+        margin: 0;
+        float: none;
+    }
+
 }
 
 @media screen and (max-width: 560px) {
