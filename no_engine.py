@@ -5,6 +5,8 @@ import cgi, cgitb
 cgitb.enable()
 sys.stderr = sys.stdout
 
+a = "Changes for git reeepo"
+
 print('''\
 Content-type: text/html\r\n
 <html>
@@ -40,5 +42,3 @@ print('''
 </body>
 </html>
 ''')
-
-# a = "Changes for git reposetory"
