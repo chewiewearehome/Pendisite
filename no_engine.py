@@ -5,7 +5,7 @@ import cgi, cgitb
 cgitb.enable()
 sys.stderr = sys.stdout
 
-a = "Changes for git repo"
+a = "Changes for git reeepo"
 
 print('''\
 Content-type: text/html\r\n
