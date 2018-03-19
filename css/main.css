@@ -1,6 +1,7 @@
 :root {
   --loveless-color: #ff3530;
   --gray: #5e5e5e;
+  --black: #1A1A1A;
 }
 
 
@@ -101,6 +102,86 @@ div.music-player img {
     float: right;
     margin: 30px 30px 10px 0;
 }
+
+
+/*-----------SEARCH-------------*/
+
+.search-form {
+    display: none;
+}
+
+.music-player:active + .search-form {
+    display: flex;
+}
+
+.search-form:hover {
+    display: flex;
+}
+
+.music-player {
+    position: relative;
+}
+
+.search-form {
+    position: absolute;
+    width: 100%;
+    background-color:  var(--black);
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+form.search-form-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px;
+}
+
+form.search-form-form input {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+
+    box-sizing: border-box; /*делаем border внутри padding'а*/
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    border: 2px solid #1A1A1A;
+    /* width: 100%; */
+
+    font-size: 1em;
+    font-weight: bold;
+}
+
+form.search-form-form .text {
+    line-height: 50px;
+    flex-grow: 1;
+}
+
+form.search-form-form .submit { /* Блок кнопки ввода*/
+    color: #fff;
+    background-color: var(--black);
+    margin-left: 10px;
+    min-width: 300px;
+
+
+    transition: background-color 0.2s; /* vendorless fallback */
+    -o-transition: background-color 0.2s; /* opera */
+    -ms-transition: background-color 0.2s; /* IE 10 */
+    -moz-transition: background-color 0.2s; /* Firefox */
+    -webkit-transition: background-color 0.2s; /*safari and chrome */
+}
+
+form.search-form-form .submit:hover { /* Блок кнопки ввода*/
+    color: #1A1A1A;
+    background-color: #fff;
+}
+
+
+/*------------------------*/
 
 
 
